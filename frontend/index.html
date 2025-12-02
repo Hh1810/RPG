@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RPG 學習平台（MVP）</title>
+<link rel="stylesheet" href="styles.css">
+<!-- Firebase compat SDK for quick demo -->
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+</head>
+<body>
+<div id="app">
+<header class="topbar">
+<h1>RPG 學習平台</h1>
+<div id="userArea"></div>
+</header>
+
+
+<main class="container">
+<section id="dashboard" class="page">
+<div class="profile-card">
+<img id="avatar" src="assets/avatar-default.png" alt="avatar">
+<h2 id="displayName">Guest</h2>
+<div class="level">等級 <span id="level">1</span></div>
+<div class="xp-bar"><div id="xpBar"></div></div>
+<div class="actions">
+<button id="loginBtn">登入</button>
+<button id="logoutBtn" style="display:none;">登出</button>
+</div>
+</div>
+
+
+<div class="quests-preview">
+<h3>今日任務</h3>
+<div id="dailyQuests"></div>
+<div style="margin-top:12px;"><button id="startQuestsBtn">開始今天的挑戰</button></div>
+</div>
+
+
+<div class="badges">
+<h3>徽章</h3>
+<div id="badgesList"></div>
+</div>
+</section>
+
+
+<section id="questPage" class="page" style="display:none;">
+<button id="backBtn">返回</button>
+<h2 id="questTitle">任務</h2>
+<div id="questArea"></div>
+<div style="margin-top:12px;"><button id="submitAnswerBtn">提交答案</button></div>
+</section>
+
+
+</main>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
