@@ -1,0 +1,17 @@
+:root{--accent:#6b5b95}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:#f4f6f9;color:#111;margin:0}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;background:linear-gradient(90deg,#3b82f6,#06b6d4);color:white}
+.container{display:flex;gap:20px;padding:20px}
+.profile-card{background:white;padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.08);width:260px}
+.profile-card img{width:72px;height:72px;border-radius:50%}
+.xp-bar{height:12px;background:#eee;border-radius:8px;overflow:hidden;margin-top:8px}
+#xpBar{height:100%;width:30%;background:linear-gradient(90deg,var(--accent),#f97316)}
+.quests-preview{flex:1;background:white;padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.badges{width:220px}
+.page{min-height:60vh}
+button{background:var(--accent);color:white;border:none;padding:8px 12px;border-radius:8px;cursor:pointer}
+.quest-preview-item{padding:8px 6px;border-bottom:1px solid #eee}
+#questArea{background:#fff;padding:12px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.04)}
+label{display:block;margin:6px 0}
+textarea{min-height:120px}
