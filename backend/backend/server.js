@@ -14,7 +14,7 @@ const prompt = buildPrompt(type, difficulty);
 
 
 // Example for OpenAI-like API (you must adapt to your provider)
-const apiKey = process.env.AIzaSyA1qz0SSfgtykSctZ35rhLI1IesiSxN4UQ;
+const apiKey = process.env.AI_PROVIDER_KEY;
 if(!apiKey){
 return res.status(500).json({ success: false, error: 'AI provider key not set' });
 }
